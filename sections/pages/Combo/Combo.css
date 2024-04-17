@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.Body .containers {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Body .containers .filter {
+    padding: 20px 30px;
+    background-color: #bfe3f3;
+    border-right: #870c6c dotted 2px;
+}
+
+.Body .containers .filter .cate h2 {
+    padding-bottom: 4px;
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Body .containers .filter .cate h2::after {
+    background: linear-gradient(to right, transparent 0%, #8a3069 50%, transparent 100%);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+
+.Body .containers .filter .cate ul {
+    margin-top: 25px;
+}
+
+.Body .containers .filter .cate ul li {
+    margin-top: 20px;
+    list-style: none;
+    cursor: pointer;
+    font-style: italic;
+    padding: 0px 10px;
+    font-weight: 600;
+    background: #be8dac;
+    border-radius: 10px;
+}
+.Body .containers .filter .cate ul li:hover{
+    background: #aa218c;
+}
+.review{
+    float: right;
+    margin-top: 2px;
+    font-size: 0.8rem;
+}
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 5rem;
+}
+.contain .box{
+    width:285px;
+    border-radius: 5px;
+    height: 400px;
+    border: 2px #8a3069 solid;
+    background-image:linear-gradient(to bottom right,rgb(247, 188, 236),rgb(181, 215, 241));
+    margin-top: 20px; 
+    margin-right: 30px;
+    padding:25px 36px ; 
+}
+.contain .box .contant{
+    align-items: center;
+    max-width: 100%;
+}
+.contain .box .contant .img-box img{
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 12px;
+    height: 200px;
+}
+.contain .box .contant .img-box img:hover{ transform: scale(1.1);}
+.contain .box .contant  .detail p{padding-top: 2px;}
+.contain .box .contant  .detail .rating{
+    font-size: 13px;
+    padding-top: 2px;
+}
+.contain .box .contant  .detail button{
+    margin-top: 10px;
+    margin-left: 30%;
+    padding: 10px 30px;
+    border: none;
+    background: #8a3069;
+    color:aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contain .box .contant  .detail button:hover{
+    transform: scale(0.9);
+}
+
+.name{
+    padding-bottom: '6px';
+    position: relative;
+    text-align: center;
+    margin: 30px;
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.name::after{
+    background: linear-gradient(to right, transparent 30%, #8a3069 50%, transparent 70%);
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+height: 3px;
+width: 100%;
+}
+.detaii_container{
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    background-image:linear-gradient(to bottom right,rgb(247, 188, 236),white,rgb(181, 215, 241));
+    margin-left: 10%;
+    margin-top: 10%;
+    border: 2px solid #8a3069;
+    padding: 0px 40px;
+    border-radius: 5px;
+}
+.detaii_container .detaii-contant{
+    max-width: 100%;
+}
+.detaii_container .detaii-contant .detaii_info{
+    display: flex;
+}
+.detaii_container .detaii-contant .detaii_info .img-box img{
+    width: 350px;
+    height: 450px;
+    cursor:zoom-in;
+    transition: 1s ease-in-out;
+}
+.detaii_container .detaii-contant .detaii_info .img-box img:hover{transform: scale(1.2);}
+.detaii_container .detaii-contant .detaii_info .product_detaii{
+    margin: 30px 20px;
+    /* margin-left: 2%; */
+}
+.detaii_container .detaii-contant .detaii_info .product_detaii h2{
+    color: #8a3069;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+.detaii_container .detaii-contant .detaii_info .product_detaii p{
+    padding-bottom: 15px;
+}
+.detaii_container .detaii-contant .detaii_info .product_detaii .Des{
+    font-style: oblique;
+}
+.detaii_container .detaii-contant .detaii_info .product_detaii button{
+    color: #8a3069;
+    padding: 10px 30px;
+    border: none;
+    background: #8a3069;
+    margin-top: 5%;
+    cursor:progress;
+    color:aqua;
+}
+.detaii_container .detaii-contant .detaii_info .product_detaii button:hover{
+    border: 2px solid #8a3069;
+    background: transparent;
+    color: #000000;
+}
+ .product_detai .rating a{
+    color: #8a3069;
+}
+.detaii_container .detaii-contant .close{
+    border: none;
+    background: none;
+    margin-top: 10px;
+    padding-left: 1100px;
+    cursor:pointer;
+    font-size: 1.5rem;
+}

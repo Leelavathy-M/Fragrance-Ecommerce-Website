@@ -1,0 +1,176 @@
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 5rem;
+}
+.contain .box{
+    width:285px;
+    border-radius: 5px;
+    height: 400px;
+    border: 2px #8a3069 solid;
+    background-image:linear-gradient(to bottom right,rgb(247, 188, 236),rgb(181, 215, 241));
+    margin-top: 20px; 
+    margin-right: 30px;
+    padding:25px 36px ; 
+}
+.contain .box .contant{
+    align-items: center;
+    max-width: 100%;
+}
+.contain .box .contant .img-box img{
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 12px;
+    height: 200px;
+}
+.contain .box .contant .img-box img:hover{ transform: scale(1.1);}
+.contain .box .contant  .detail p{padding-top: 2px;}
+.contain .box .contant  .detail .rating{
+    font-size: 13px;
+    padding-top: 2px;
+}
+.contain .box .contant  .detail button{
+    margin-top: 10px;
+    margin-left: 30%;
+    padding: 10px 30px;
+    border: none;
+    background: #8a3069;
+    color:aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contain .box .contant  .detail button:hover{
+    transform: scale(0.9);
+}
+
+.name{
+    padding-bottom: '6px';
+    position: relative;
+    text-align: center;
+    margin: 30px;
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.name::after{
+    background: linear-gradient(to right, transparent 30%, #8a3069 50%, transparent 70%);
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+height: 3px;
+width: 100%;
+}
+.detail_container{
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    width: 600px;
+    background-image:linear-gradient(to bottom right,rgb(247, 188, 236),white,rgb(181, 215, 241));
+    margin-left: 25%;
+    margin-top: 20%;
+    border: 2px solid #8a3069;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.detail_container .detail-contant{
+    max-width: 100%;
+}
+.detail_container .detail-contant .detail_info{
+    display: flex;
+    margin-top: 20px;
+}
+.detail_container .detail-contant .detail_info .img-box img{
+    width: 250px;
+    height: 270px;
+    cursor: pointer;
+}
+.detail_container .detail-contant .detail_info .product_detail{
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.detail_container .detail-contant .detail_info .product_detail h2{
+    color: #8a3069;
+    padding-bottom: 5px;
+}
+.detail_container .detail-contant .detail_info .product_detail .caty{
+    padding-bottom: 5px;
+}
+.detail_container .detail-contant .detail_info .product_detail button{
+    color: #8a3069;
+    padding: 10px 30px;
+    border: none;
+    background: #8a3069;
+    margin-top: 30%;
+    cursor: pointer;
+    color:aqua;
+}
+.detail_container .detail-contant .detail_info .product_detail button:hover{
+    border: 2px solid #8a3069;
+    background: transparent;
+    color: #000000;
+}
+ .product_detail .rating a{
+    color: #8a3069;
+}
+.detail_container .detail-contant .close{
+    border: none;
+    background: none;
+    cursor:pointer;
+    font-size: 1.5rem;
+}
+@media screen and (width < 400px){
+    .name{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2rem;
+        width: 100%;
+        border-bottom: #8a3069 2px solid;
+    }
+}
+@media screen and (width < 600px){
+    .contain{
+ flex-wrap: wrap;
+margin: 25px;
+    }
+    .contain .box{
+        width:320px;
+        height: 400px;
+        border-radius: 10px;
+        padding: 25px 40px ; 
+    }
+    .contain .box .contant .img-box img{
+        width: 240px;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        height: 230px;
+    }
+    .detail_container{
+        width: 350px;
+        margin-left: 5%;
+        margin-top: 30%;
+    }
+    .detail_container .detail-contant .detail_info .img-box img{
+        width: 130px;
+        height: 200px;
+        cursor: pointer;
+    }
+    .detail_container .detail-contant .detail_info{
+        margin-top: 8px;
+    }
+    .detail_container .detail-contant .detail_info .product_detail{
+        margin-top:1.5rem;
+        margin-left: 10%;
+        font-size: 12px;
+    }
+    .detail_container .detail-contant .detail_info .product_detail button{
+        padding:10px;
+        margin-top: 15%;
+    }
+    .detail_container .detail-contant .close{
+        font-size: 1.2rem;
+    }
+}
